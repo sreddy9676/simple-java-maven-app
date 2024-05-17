@@ -34,9 +34,12 @@
     <plugins>
       <plugin>
         <!-- Build an executable WAR -->
+        <dependency>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
         <version>3.4.1-SNAPSHOT</version>
+        <type>maven-plugin</type>
+        </dependency>
         <configuration>
           <archive>
             <manifest>
